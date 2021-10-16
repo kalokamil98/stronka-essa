@@ -400,6 +400,7 @@ footer {
     justify-content: space-between;
   }
   .nav_hamburger {
+    margin-right: 1em;
     display: block;
     float: right;
   }
