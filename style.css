@@ -423,7 +423,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   header {
     top: 0;
     background: white;
@@ -468,4 +468,4 @@ footer {
     width: 100vw;
     display: block;
   }
-}
+} */
