@@ -76,42 +76,52 @@
         <div class="contact" id="contact">
           <p>KONTAKT</p>
           <p>Chcesz wiedzieć więcej? Skontaktuj się z nami.</p>
-          <form action="">
-            <div class="description">
-              <label for="name"
-                >Imię <br />
-                <input type="text" name="name" placeholder="Twoje imie" />
-              </label>
-              <label for="email">
-                <span>e mail</span> <br />
-                <input type="text" name="email" placeholder="Twój email" />
-              </label>
-            </div>
+          <!-- <form action=""> -->
+          <div class="description">
+            <label for="name"
+              >Imię <br />
+              <input
+                type="text"
+                name="name"
+                placeholder="Twoje imie"
+                id="name"
+              />
+            </label>
+            <label for="email">
+              <span>e mail</span> <br />
+              <input
+                type="text"
+                name="email"
+                placeholder="Twój email"
+                id="email"
+              />
+            </label>
+          </div>
+          <br />
+
+          <p>Twoja Wiadomość</p>
+          <textarea
+            name="message"
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Tu wpisz tekst"
+          ></textarea>
+          <br />
+
+          <input type="checkbox" name="ok" id="ok" />
+          <span class="personal_data">
+            Wyrażam zgode na przetwarznie danych osobowych zgodnie z ustawą o
             <br />
-
-            <p>Twoja Wiadomość</p>
-            <textarea
-              name="message"
-              id=""
-              cols="60"
-              rows="10"
-              placeholder="Tu wpisz tekst"
-            ></textarea>
+            chronie danych osobowych w związku z wysłaniem zapytania przez
             <br />
+            formularz kontaktowy. Podanie danych jest dobrowolne, ale nizbędne
+            do przetwarzenia zapytania...
+          </span>
 
-            <input type="checkbox" name="ok" id="ok" />
-            <span class="personal_data">
-              Wyrażam zgode na przetwarznie danych osobowych zgodnie z ustawą o
-              <br />
-              chronie danych osobowych w związku z wysłaniem zapytania przez
-              <br />
-              formularz kontaktowy. Podanie danych jest dobrowolne, ale nizbędne
-              do przetwarzenia zapytania...
-            </span>
-
-            <p><a href="" class="clause"> pokaż klauzule informacyjną</a></p>
-            <button>Skontaktuj się</button>
-          </form>
+          <p><a href="" class="clause"> pokaż klauzule informacyjną</a></p>
+          <button id="send">Skontaktuj się</button>
+          <!--   </form> -->
           <!-- ---------------------- INFO ------------------------- -->
         </div>
         <div class="company_info">
@@ -147,6 +157,7 @@
       </footer>
       <img src="./images/icons_2.png" alt="" class="icons_2" />
     </div>
+    <script src="main.js"></script>
   </body>
   <!--       _
        .__(.)< (MEOW)

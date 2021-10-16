@@ -430,7 +430,11 @@ footer {
     width: 88vw;
   }
 }
-
+/* 
+================================
+      Mobile Nav Bar css only 
+================================
+*/
 @media screen and (max-width: 500px) {
   header {
     top: 0;
