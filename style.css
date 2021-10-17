@@ -134,6 +134,10 @@ nav li {
   width: 40vw;
 }
 
+.home_img_2 img {
+  max-width: 100%;
+}
+
 .home_img_2_bg {
   z-index: -1;
   height: 100%;
@@ -222,7 +226,8 @@ nav li {
 .contact button {
   border-radius: 5px;
   border: solid #151515;
-  height: 7vh;
+  min-height: 7vh;
+
   width: 40%;
   background: #151515;
   font-size: 18px;
@@ -259,13 +264,14 @@ nav li {
   font-weight: bold;
 }
 .company_info p {
+  overflow-wrap: break-word;
   color: #efefef;
   padding: 10% 0 10% 0;
   font-size: 1.4rem;
   line-height: 145.6%;
 }
 #ok {
-  width: 2%;
+  width: 2vw;
 }
 .phone p {
   text-align: center;
@@ -305,6 +311,9 @@ footer {
   width: 71vw;
   border: 1px solid #dadada;
   border-radius: 13px;
+}
+footer img {
+  max-height: 18vh;
 }
 .icons_2 {
   display: none;
