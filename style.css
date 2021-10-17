@@ -331,6 +331,16 @@ footer img {
     max-width: 100%;
     overflow-x: hidden;
   }
+  header img {
+    max-width: 15vw;
+  }
+  header {
+    top: 0;
+    background: white;
+    z-index: 1;
+    position: fixed;
+    width: 85vw;
+  }
   .content_wrapper {
     align-items: flex-start;
   }
@@ -380,7 +390,7 @@ footer img {
   }
   .contact {
     border-radius: 0px;
-    width: 100vw;
+    width: 95vw;
   }
   .contact p:nth-child(2) {
     padding-left: 10%;
@@ -445,12 +455,8 @@ footer img {
 ================================
 */
 @media screen and (max-width: 500px) {
-  header {
-    top: 0;
-    background: white;
-    z-index: 1;
-    position: fixed;
-    width: 85vw;
+  .nav_hamburger_img {
+    max-width: 18vw;
   }
 
   .nav-toggle {
