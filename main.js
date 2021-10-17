@@ -33,8 +33,6 @@ async function send_hook() {
     ],
   };
 
-  console.log(message);
-
   const response = await fetch(hook_url, {
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +43,6 @@ async function send_hook() {
 
   return response;
 }
-
 var send = false;
 
 document.querySelector("#send").addEventListener("click", () => {
