@@ -46,8 +46,15 @@ async function send_hook() {
   return response;
 }
 
+var send = false;
+
 document.querySelector("#send").addEventListener("click", () => {
-  send_hook().then((data) => {
-    console.log(data);
-  });
+  if (!send) {
+    send_hook()
+      .then((data) => {
+        console.log(data);
+        send = true;
+      })
+      .catch((err) => alert("Błąd połączenia"));
+  } else alert("Już wysłano widomość");
 });
