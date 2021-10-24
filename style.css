@@ -295,7 +295,7 @@ a:hover {
 footer {
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  min-height: 20vh;
   height: 20vh;
   display: flex;
   width: 71vw;
@@ -303,7 +303,7 @@ footer {
   border-radius: 13px;
 }
 footer img {
-  max-height: 15vh;
+  max-height: 25vh;
 }
 
 .icons_2 {
