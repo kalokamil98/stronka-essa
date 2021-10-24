@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #efefef;
 }
 
 :root {
@@ -350,6 +350,7 @@ footer img {
   html,
   body {
     max-width: 100%;
+    margin: 0;
     overflow-x: hidden;
   }
   /* header */
@@ -378,7 +379,7 @@ footer img {
 
   /* home */
   .content_wrapper {
-    align-items: flex-start;
+    align-items: center;
   }
   .home_content {
     justify-content: center;
@@ -389,13 +390,13 @@ footer img {
     padding: 30vh 0 15vh 0;
   }
   .home_img_1 img {
-    width: 95vw;
+    width: 96vw;
   }
   .overlay_hm1 {
-    width: 95vw;
+    width: 96vw;
   }
   .about_us {
-    width: 95vw;
+    width: 96vw;
     height: 90vh;
   }
   /* home 2 */
@@ -404,7 +405,7 @@ footer img {
   }
   .home_img_2 {
     height: 55vh;
-    width: 95vw;
+    width: 96vw;
   }
   .home_img_2 img {
     height: 88vh;
@@ -414,7 +415,7 @@ footer img {
     position: absolute;
   }
   .about_us_2 {
-    width: 95vw;
+    width: 96vw;
     height: 100vh;
   }
   .about_us_2 img {
@@ -425,8 +426,9 @@ footer img {
     flex-direction: column;
   }
   .contact {
+    background-color: #efefef;
     border-radius: 0px;
-    width: 95vw;
+    width: 100vw;
   }
   .contact p:nth-child(2) {
     padding-left: 10%;
@@ -452,12 +454,10 @@ footer img {
   footer {
     gap: 8vh;
     height: 60vh;
-    width: 95vw;
+    width: 96vw;
     flex-direction: column;
   }
-  footer img {
-    width: 30vw;
-  }
+
   footer img:last-child {
     display: none;
   }
@@ -465,7 +465,7 @@ footer img {
     margin: 0 auto;
     display: block;
     margin-bottom: 2.3rem;
-    width: 50vw;
+    max-width: 65vw;
   }
 }
 /* 
