@@ -213,7 +213,7 @@ a:hover {
 .contact button {
   border-radius: 5px;
   border: solid #151515;
-  min-height: 7vh;
+  min-height: 55px;
   min-width: 7vw;
   width: 40%;
   background: #151515;
