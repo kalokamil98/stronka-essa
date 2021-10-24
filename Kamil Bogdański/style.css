@@ -24,12 +24,12 @@ body {
 */
 
 header {
-  padding-left: 10vw;
+  padding-left: 8rem;
   padding-top: 2rem;
   display: flex;
 }
 nav {
-  padding-left: 10vw;
+  padding-left: 9.313rem;
 }
 nav li {
   display: inline;
@@ -310,7 +310,7 @@ footer img {
 ====================
 */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   html,
   body {
     max-width: 100%;
@@ -426,15 +426,15 @@ footer img {
     margin: 0 auto;
     display: block;
     margin-bottom: 2.3rem;
-    width: 50vw;
+    width: 80vw;
   }
 }
 /* 
 ================================
-      Mobile Nav Bar css
+      Mobile Nav Bar
 ================================
 */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
   .nav_hamburger_img {
     max-width: 18vw;
   }
