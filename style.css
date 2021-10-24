@@ -214,6 +214,7 @@ a:hover {
   border-radius: 5px;
   border: solid #151515;
   min-height: 7vh;
+  min-width: 7vw;
   width: 40%;
   background: #151515;
   font-size: 1.15rem;
@@ -309,6 +310,36 @@ footer img {
     Media Query
 ====================
 */
+
+@media only screen and (max-width: 900px) {
+  .home_img_1 img {
+    width: 50vw;
+  }
+  .overlay_hm1 {
+    width: 50vw;
+  }
+  .about_us {
+    width: 40vw;
+  }
+  .home_img_2 {
+    width: 50vw;
+  }
+  .home_img_2 img {
+    width: 50vw;
+  }
+  .about_us_2 {
+    width: 40vw;
+  }
+  .company_info {
+    width: 35vw;
+  }
+  .contact {
+    width: 55vw;
+  }
+  footer {
+    width: 92.5vw;
+  }
+}
 
 @media only screen and (max-width: 650px) {
   html,
