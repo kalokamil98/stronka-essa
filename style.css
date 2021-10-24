@@ -452,7 +452,6 @@ footer img {
   }
   /* Footer */
   footer {
-    gap: 8vh;
     height: 60vh;
     width: 96vw;
     flex-direction: column;
