@@ -235,6 +235,7 @@ a:hover {
 }
 
 .contact input {
+  min-width: 110px;
   width: 10vw;
   margin-top: 10%;
   border: solid #f8f8f8;
@@ -258,6 +259,7 @@ a:hover {
   line-height: 145.6%;
 }
 #ok {
+  min-width: 0;
   width: 2vw;
 }
 .phone p {
