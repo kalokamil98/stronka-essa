@@ -295,6 +295,7 @@ a:hover {
 footer {
   justify-content: space-around;
   align-items: center;
+  min-height: 15vh;
   height: 20vh;
   display: flex;
   width: 71vw;
