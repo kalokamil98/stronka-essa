@@ -301,6 +301,9 @@ footer {
   border: 1px solid #dadada;
   border-radius: 13px;
 }
+footer img {
+  max-height: 15vh;
+}
 
 .icons_2 {
   display: none;
