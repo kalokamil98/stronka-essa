@@ -15,7 +15,7 @@ $password = "MlodyDebil55";
 $dbname = "plan";
     $conn = new mysqli($servername, $username, $password,$dbname);
     
-    
+    $conn->set_charset('utf8')
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
     }
@@ -27,7 +27,7 @@ $dbname = "plan";
 
     while($row = $result->fetch_assoc()){
 
-        echo "<h1>Id_osoby: $row[Id_osoba] imie:$row[Imie] Nazwisko: $row[Nazwisko] Adres: $row[Adres] Telefon : $row[Telefon] E-mail : $row[E_mail]   </h1>";
+        echo "<h2>Id_osoby: $row[Id_osoba] imie:$row[Imie] Nazwisko: $row[Nazwisko] Adres: $row[Adres] Telefon : $row[Telefon] E-mail : $row[E_mail]   </h2>";
 
 
     }
