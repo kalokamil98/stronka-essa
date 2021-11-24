@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,10 +9,10 @@ body {
 }
 
 :root {
-  font-family: Cormorant;
+  font-family: "Cormorant", serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.1em;
   --bg-primary: rgb(57, 57, 57, 0.14);
@@ -48,7 +50,7 @@ nav li {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 /*
 ==================
@@ -82,7 +84,7 @@ a:hover {
 }
 
 .home_img_1 img {
-  width: 40vw;
+  width: 42.5vw;
 }
 
 .overlay_hm1 {
@@ -90,7 +92,7 @@ a:hover {
   bottom: 0;
   background: var(--bg-primary);
   height: 60%;
-  width: 40vw;
+  width: 42.5vw;
   border-radius: 15px;
 }
 
@@ -99,11 +101,12 @@ a:hover {
 }
 
 .about_us {
+  font-size: 1.1rem;
   height: 60%;
   position: relative;
   top: 40%;
   box-sizing: border-box;
-  width: 30vw;
+  width: 27.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +132,7 @@ a:hover {
   position: relative;
   display: flex;
   justify-content: center;
-  width: 40vw;
+  width: 35vw;
 }
 
 .home_img_2 img {
@@ -146,7 +149,7 @@ a:hover {
 }
 
 .about_us_2 {
-  width: 30vw;
+  width: 35vw;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -174,7 +177,7 @@ a:hover {
 .contact {
   width: 45vw;
   border-radius: 15px;
-  height: 100%;
+
   background: var(--bg-primary);
 }
 
@@ -184,8 +187,15 @@ a:hover {
   gap: 15%;
   text-align: left;
 }
+.contact h2 {
+  margin: 4rem 0 4rem 0;
+}
 
 .clause {
+  margin: 2rem 0 4rem 0;
+}
+
+.clause a {
   font-weight: normal;
   font-size: 0.9rem;
 }
@@ -198,6 +208,10 @@ a:hover {
 .contact a {
   color: black;
   text-decoration: none;
+}
+
+.street {
+  font-weight: 400;
 }
 
 .contact p {
@@ -215,7 +229,7 @@ a:hover {
   border-radius: 5px;
   border: solid #151515;
   min-height: 55px;
-  min-width: 7vw;
+  min-width: 200px;
   width: 40%;
   background: #151515;
   font-size: 1.15rem;
@@ -228,7 +242,7 @@ a:hover {
 ==============
 */
 .company_info {
-  padding-left: 2.5%;
+  padding-left: 5%;
   text-align: left;
   border-radius: 15px;
   width: 25vw;
@@ -236,12 +250,12 @@ a:hover {
 }
 
 .contact input {
-  min-width: 100px;
+  min-width: 85px;
   width: 10vw;
   margin-top: 10%;
   border: solid #f8f8f8;
   border-radius: 4px;
-  padding: 6px;
+  padding: 10px;
   background: #f8f8f8;
 }
 
@@ -255,7 +269,7 @@ a:hover {
 .company_info p {
   overflow-wrap: break-word;
   color: #efefef;
-  padding: 10% 0 10% 0;
+  padding: 10% 10% 10% 0;
   font-size: 1.4rem;
   line-height: 145.6%;
 }
@@ -271,7 +285,7 @@ a:hover {
   background: #212121;
 }
 .nip p {
-  padding: 2% 0% 2% 0%;
+  padding: 2% 18% 2% 0%;
   color: #898989;
   font-style: normal;
   font-weight: normal;
@@ -279,7 +293,7 @@ a:hover {
 }
 
 .contact textarea {
-  width: 60%;
+  width: 65%;
   padding: 2%;
   border-radius: 4px;
   border: solid white;
@@ -293,12 +307,13 @@ a:hover {
 */
 
 footer {
+  box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
   min-height: 200px;
   height: 20vh;
   display: flex;
-  width: 71vw;
+  width: 71.4vw;
   border: 1px solid #dadada;
   border-radius: 13px;
 }
@@ -318,31 +333,31 @@ footer img {
 
 @media only screen and (max-width: 900px) {
   .home_img_1 img {
-    width: 50vw;
+    width: 55vw;
   }
   .overlay_hm1 {
-    width: 50vw;
+    width: 55vw;
   }
   .about_us {
     width: 40vw;
   }
   .home_img_2 {
-    width: 50vw;
+    width: 47.5vw;
   }
   .home_img_2 img {
-    width: 50vw;
+    width: 47.5vw;
   }
   .about_us_2 {
-    width: 40vw;
+    width: 47.5vw;
   }
   .company_info {
     width: 35vw;
   }
   .contact {
-    width: 55vw;
+    width: 60vw;
   }
   footer {
-    width: 92.5vw;
+    width: 97.5vw;
   }
 }
 
@@ -436,6 +451,9 @@ footer img {
   }
   .contact input {
     width: 30vw;
+  }
+  #message {
+    width: 90%;
   }
   #ok {
     transform: scale(2);

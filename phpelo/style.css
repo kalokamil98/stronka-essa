@@ -73,3 +73,16 @@ td {
 th {
   text-align: center;
 }
+
+form {
+  padding-top: 50px;
+  position: absolute;
+  display: flex;
+  background-color: grey;
+  height: 400px;
+  width: 600px;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  display: none;
+}

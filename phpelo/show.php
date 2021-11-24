@@ -41,6 +41,7 @@
 
 <?php 
     
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -80,21 +81,27 @@ $header = strtoupper($_GET['table']);
 
 echo "<table>";
 
-echo "<tr> <td colspan='100%'><b> $header</b> </td></tr>";
+echo "<tr > <td colspan='100%'><b id='table'> $header</b> </td></tr>";
 
 $sql_col_name = "show COLUMNS FROM $_GET[table]";
 
 
 $col_name = $conn->query($sql_col_name);
 
+$form_names = array();
 
 echo "<tr>";
 
 while($name = $col_name->fetch_assoc()){
-echo "<td> <b> $name[Field] </b> </td>";
+$form_names[] = $name['Field'];
+
+  echo "<td> <b> $name[Field] </b> </td>";
 
 
 }
+
+
+
 
 echo "</tr>";
 
@@ -109,10 +116,14 @@ if($table_data->num_rows > 0){
 
 
 while($data = $table_data->fetch_row()){
-echo "<tr>";
+  
+echo "<tr id='$data[0]'>";
 for($i=0;$i<count($data);$i++){
     echo "<td>".$data[$i].'</td>';
 };
+
+echo "<td> <button onclick='delete_row($data[0])'> X </button> </td>";
+
 echo "</tr>";
 
 }
@@ -125,20 +136,33 @@ echo "</tr>";
 
 
 
-}
 echo "</table>";
+}
 
 
 
 
 
 
+echo "<form action='update.php?table=$_GET[table]&id='>";
+
+for($x = 0;$x<count($form_names);$x++){
+echo "<div>";
+echo "$form_names[$x]  <input name='$form_names[$x]'></input>";
+
+echo "</div>";
+}
+
+echo "<button>Prześlij</button>";
+echo "</form>"
 
 
     ?>
 
 
 
-   
+
+
+   <script src="main.js"></script>
   </body>
 </html>
