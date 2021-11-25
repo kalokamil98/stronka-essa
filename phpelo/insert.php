@@ -5,7 +5,6 @@ $username = "lepki";
 $password = "MlodyDebil55";
 $database = "plan";
 
-
 $conn = new mysqli($servername, $username, $password,$database);
 
 
@@ -29,24 +28,35 @@ $Column_name = $pk_table['Column_name'];
 $key = array_keys($_GET);
 
 $sql2 = "";
-$sql = "UPDATE ".$_GET['table']." SET ";
-for($i=2;$i<count($key);$i++){
-if($i==count($key)-1) {$sql2 = $sql2.$key[$i]."='".$_GET[$key[$i]]."' ";
+$sql = "INSERT INTO ".$_GET['table']." (";
+for($i=1;$i<count($key);$i++){
+if($i==count($key)-1) {$sql2 = $sql2.$key[$i].')';
 break;
 }
  
-$sql2 = $sql2.$key[$i]."='".$_GET[$key[$i]]."' , ";
+$sql2 = $sql2.$key[$i].",";
+
+}
+$sql2 = $sql2.' VALUES (';
+
+for($i=1;$i<count($key);$i++){
+if($i==count($key)-1) {$sql2 = $sql2."'".$_GET[$key[$i]]."') ";
+break;
+}
+ 
+$sql2 = $sql2."'".$_GET[$key[$i]]."' , ";
 
 
 
 }
 
-$sql_fin =$sql.$sql2."WHERE $Column_name=".$_GET['id'];
+
+$sql_fin =$sql.$sql2;
 
 
-echo $sql_fin;
 
- $conn->query($sql_fin);
+
+$conn->query($sql_fin);
 
 
 header('Location: ' . $_SERVER['HTTP_REFERER']); 

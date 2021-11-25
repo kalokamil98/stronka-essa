@@ -5,14 +5,15 @@
 
 
 
-$row_id = $_GET['row_id'];
+$row_id = $_GET['id'];
 $table = $_GET['table'];
 
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "lepki";
+$password = "MlodyDebil55";
 $database = "plan";
+
 
 
 $sql_table = "SHOW KEYS FROM $table WHERE Key_name = 'PRIMARY'";
@@ -50,7 +51,7 @@ $sql = "DELETE FROM $table WHERE $Column_name = $row_id  ";
 $conn->query($sql);
 
 
-
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
 ?>
